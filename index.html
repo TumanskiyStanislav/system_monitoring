@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Развитие территорий</title>
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="description" content="Информационная система мониторинга комплексного развития территорий">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+    <header class="flex_center">
+        <!-- <nav class="nav_header">
+            Развитие территорий
+        </nav> -->
+        <h1 class="container_header">
+            Развитие территорий
+        </h1>
+    </header>
+    <main>
+        <section class="clouds">
+            <div class="clouds-container">
+                <img src="./img/clouds/cloud1.png" class="cloud cloud1" data-speed="40" data-x="10%">
+                <img src="./img/clouds/cloud2.png" class="cloud cloud2" data-speed="30" data-x="30%">
+                <img src="./img/clouds/cloud3.png" class="cloud cloud3" data-speed="20" data-x="50%">
+                <img src="./img/clouds/cloud4.png" class="cloud cloud4" data-speed="10" data-x="90%">
+                <img src="./img/clouds/cloud5.png" class="cloud cloud5" data-speed="35" data-x="250%">
+                <img src="./img/clouds/cloud6.png" class="cloud cloud6" data-speed="25" data-x="60%">
+                <img src="./img/clouds/cloud7.png" class="cloud cloud7" data-speed="31" data-x="73%">
+              </div>
+        </section>
+        <section class="section_all">
+            <div class="container_section">
+                <p>Информационная система мониторинга комплексного развития территорий</p>
+            </div>
+            <!-- <button id="myButton">Нажми меня</button> -->
+        </section>
+        <section class="section_all">
+            <div class="container_section animation_section">
+                <div class="animation_container">
+
+                    <div class="transitioned">
+                        <img src="./img/building1_2.png" alt="" class="animation_building1 tooltip-target">
+                        <!-- <div class="tooltip2 tooltip_building1">Детский садик</div> -->
+                        <img src="./img/balluns2.png" alt="" class="tooltip2 tooltip_building1">
+                    </div>
+
+                    <div class="transitioned">
+                        <!-- <div class="tooltip tooltip_building2">Школа № 353 имени А. С. Пушкина</div> -->
+                        <img src="./img/school1_5.png" alt="" class="animation_school1 tooltip-target">
+                        <img src="./img/flag2.png" alt="" class="tooltip tooltip_building2">
+                        <!-- <div class="tooltip tooltip_building2">Школа № 353 имени А. С. Пушкина</div> -->
+                    </div>
+
+                    <div class="transitioned">
+                        <img src="./img/hospital1_1.png" alt="" class="animation_hospital1 tooltip-target">
+                        <img src="./img/krest3.png" class="tooltip tooltip_building3">
+                        <!-- <div class="tooltip2 tooltip_building3">Больница, просто больница</div> -->
+                    </div>
+
+                    <img src="./img/tree1_4.png" alt="" class="animation_tree1">
+                    <img src="./img/road3.png" alt="" class="animation_road3">
+                    <div class="animation_container_car">
+                        <img src="./img/car1.png" alt="Car" class="animation_avto car" id="car1">
+                        <img src="./img/car2.png" alt="Car" class="animation_avto2"  id="car2">
+                    </div> 
+                    <img src="./img/tree1_3.png" alt="" class="animation_tree2">
+                    <img src="./img/tree1_3.png" alt="" class="animation_tree4">
+                    <img src="./img/tree1_3.png" alt="" class="animation_tree3">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="/js/index.js"></script>
+    <!-- <script>
+        // Этот код можно использовать для тестирования, если вы не хотите создавать отдельный файл
+        // document.getElementById("myButton").addEventListener("click", function() {
+        //     showAlert();
+        // });
+
+        const car1 = document.getElementById('car1');
+        const car2 = document.getElementById('car2');
+        let isForward = true;
+
+        function animateCar(car) {
+            const containerWidth = document.querySelector('.animation-container').offsetWidth;
+            const carWidth = car.offsetWidth;
+            const startPoint = isForward ? -carWidth : containerWidth;
+            const endPoint = isForward ? containerWidth : -carWidth;
+
+            car.style.transform = `translateX(${startPoint}px)`;
+
+            setTimeout(() => {
+                car.style.opacity = '1';
+                car.style.transform = `translateX(${endPoint}px)`;
+
+                setTimeout(() => {
+                    car.style.opacity = '0';
+                    isForward = !isForward;
+                    car.src = isForward ? 'car1.png' : 'car2.png';
+                    animateCar(car);
+                }, 1000); // Задержка перед сменой направления
+            }, 3000); // Задержка перед изменением скорости
+        }
+
+        animateCar(car1);
+        animateCar(car2);
+
+    </script> -->
+    <script src="./js/index.js"></script>
+</body>
+</html>

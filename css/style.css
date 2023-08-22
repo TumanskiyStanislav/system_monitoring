@@ -1,0 +1,242 @@
+.flex_center {
+    display: flex;
+    justify-content: center;
+}
+/* .nav_header {
+    max-width: 1146px;
+    min-width: 1146px;
+    height: 100px;
+} */
+.container_header {
+    max-width: 1146px;
+    min-width: 1146px;
+    /* height: 100px; */
+    padding: 10px;
+    text-align: center;
+}
+.section_all {
+    display: flex;
+    justify-content: center;
+}
+/* .text_one_container { */
+.container_section {
+    max-width: 1146px;
+    min-width: 1146px;
+}
+/* .animation_section {
+} */
+.animation_container {
+    background-color: #86fe71;
+    /* height: 50vw; */
+    height: 620px;
+    /* height: 50vw; */
+    border-radius: 24px;
+    position: relative;
+}
+.animation_container_car {
+    /* position: relative; */
+    /* display: flex; */
+    width: 23%;
+    height: 152px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    position: absolute;
+    top: 208px;
+    left: 232px;
+}
+.animation_building1 {
+    position: absolute;
+    z-index: 2;
+}
+.animation_hospital1 {
+    position: absolute;
+    /* bottom: 0; */
+    /* top: 312px;
+    left: 2px; */
+    top: 250px;
+    left: 400px;
+    z-index: 2;
+}
+.animation_school1 {
+    position: absolute;
+    /* bottom: 0; */
+    left: 500px;
+    z-index: 2;
+
+}
+.animation_tree1 {
+    position: absolute;
+    /* bottom: 0; */
+    top: 90px;
+    left: 279px;
+}
+.animation_tree2 {
+    position: absolute;
+    /* bottom: 0; */
+    top: 327px;
+    left: 89px;
+    width: 210px;
+}
+.animation_tree3 {
+    position: absolute;
+    /* bottom: 0; */
+    top: 327px;
+    left: -41px;
+    width: 260px;
+}
+.animation_tree4 {
+    position: absolute;
+    /* bottom: 0; */
+    top: 327px;
+    left: -91px;
+    width: 220px;
+}
+
+.animation_road3 {
+    position: absolute;
+    /* top: 10vw; */
+    /* left: 10vw; */
+    top: 148px;
+    left: 148px;
+
+
+}
+.animation_avto2 {
+    position: absolute;
+    top: -9px;
+    left: 267px;
+}
+.animation_avto {
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* top: 374px; */
+    /* left: 192px; */
+    width: 70px;
+    height: 46px;
+}
+.car {
+    /* transition: transform 3s linear, opacity 1s linear; */
+    /* transition: transform 2s linear; */
+    transition: transform 2s ease;
+    opacity: 0;
+}
+.tooltip-target:hover + .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+.tooltip-target:hover + .tooltip2 {
+    opacity: 1;
+    visibility: visible;
+}
+.tooltip {
+    position: absolute;
+    /* Описываем переход */
+    transition: opacity 0.4s, visibility 0.1s, transform 0.4s;
+    /* Прячем элемент */
+    opacity: 0;
+    visibility: hidden;
+}
+.tooltip2 {
+    position: absolute;
+    /* Описываем переход */
+    transition: opacity 0.4s, visibility 0.1s, transform 2.0s;
+    /* Прячем элемент */
+    opacity: 0;
+    visibility: hidden;
+}
+.tooltip_building1 {
+    position: absolute;
+    /* left: 200px; */
+    left: 114px;
+    top: -300px;
+    /* padding: 10px; */
+    border-radius: 5px;
+    /* background-color: #fff; */
+    z-index: 4;
+}
+.tooltip_building2 {
+    position: absolute;
+    /* left: 500px; */
+    /* top: 10px; */
+    /* padding: 10px; */
+    /* border-radius: 5px; */
+    /* background-color: #fff; */
+    left: 674px;
+    top: -17px;
+    z-index: 4;
+    /* width: 95px; */
+    width: 65px;
+}
+.tooltip_building3 {
+    position: absolute;
+    /* left: 600px; */
+    left: 586px;
+    /* top: 250px; */
+    top: 284px;
+    /* padding: 10px; */
+    border-radius: 5px;
+    /* background-color: #fff; */
+    z-index: 4;
+    /* width: 73px; */
+    width: 55px;
+}
+.transitioned .tooltip {
+    /* Второй тултип еще опускаем вниз */
+    transform: translateY(20px);
+}
+.transitioned .tooltip2 {
+    /* Второй тултип еще опускаем вниз */
+    transform: translateY(300px);
+}
+.transitioned .tooltip-target:hover + .tooltip {
+    /* Поднимаем второй тултип обратно вверх при появлении */
+    transform: translateY(0);
+}
+.transitioned .tooltip-target:hover + .tooltip2 {
+    /* Поднимаем второй тултип обратно вверх при появлении */
+    transform: translateY(0);
+}
+.transitioned {
+    position: relative;
+}
+
+.clouds-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 200px; /* Высота контейнера */
+}
+  
+.cloud {
+    position: absolute;
+    top: 50%; /* Выравнивание облаков по вертикали */
+    transform: translateY(-50%);
+    left: var(--startX); /* Добавляем начальное положение */
+    animation: moveClouds linear infinite;
+}
+.cloud1 {
+    width: 12vw;
+}
+.cloud2 {
+    width: 13vw;
+}
+.cloud3 {
+    width: 15vw;
+} 
+.cloud4 {
+    width: 14vw;
+} 
+.cloud5 {
+    width: 13vw;
+} 
+.cloud6 {
+    width: 12vw;
+} 
+.cloud7 {
+    width: 13vw;
+}
+@keyframes moveClouds {
+    to {
+        transform: translateX(1000%);
+    }
+}
