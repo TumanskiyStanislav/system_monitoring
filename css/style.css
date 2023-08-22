@@ -1,3 +1,6 @@
+* {
+    font-family: 'Itel', sans-serif;
+}
 .flex_center,
 .text_one,
 .text_two,
@@ -28,7 +31,7 @@
     /* height: 100px; */
     padding: 10px;
     text-align: center;
-    font-size: 58px;
+    font-size: 54px;
     color: blue;
     margin-bottom: 0;
     margin-top: 0;
@@ -42,7 +45,7 @@
 .text_one_container_p {
     text-align: center;
     margin-bottom: 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 .nav_header_list li {
@@ -297,7 +300,7 @@
     height: 527px;
 }
 .text_two_p1 {
-    font-size: 18px;
+    font-size: 16px;
 }
 .text_bold {
     font-weight: bold;
@@ -315,10 +318,24 @@
     background: #F4F4F4;
 }
 .who_needs_table thead th {
-    padding: 0 5px;
+    padding: 0 15px;
 }
 .who_needs_table thead th {
     height: 50px;
     border: none;
     text-align: center;
+}
+.who_needs_table thead th:first-child, 
+.who_needs_table tbody td:first-child {
+    text-align: left;
+}
+.who_needs_table tbody td {
+    height: 55px;
+    text-align: center;
+    padding: 0 15px;
+    border-bottom: 1px solid #F4F4F4;
+}
+.who_needs_container_h2 {
+    text-align: center;
+    font-size: 30px;
 }
