@@ -4,7 +4,12 @@
 .flex_center,
 .text_one,
 .text_two,
-.who_needs {
+.who_needs,
+.image_two_section,
+.implementation_examples,
+.image_three_section,
+.image_four_section
+ {
     display: flex;
     justify-content: center;
 }
@@ -15,8 +20,8 @@
     /* justify-content: space-around; */
     justify-content: space-between;
     align-items: baseline;
-    margin-top: 28px;
-    margin-bottom: 5px;
+    margin-top: 34px;
+    margin-bottom: 36px;
     /* max-width: 1146px;
     min-width: 1146px;
     height: 100px; */
@@ -38,13 +43,33 @@
 }
 .text_one_container,
 .text_two_container,
-.who_needs_container {
+.who_needs_container,
+.image_two_container,
+.implementation_examples_container,
+.image_three_container,
+.image_four_container {
     max-width: 1146px;
     min-width: 1146px;
+}
+.who_needs_container {
+    margin-bottom: 20px;
+}
+.image_two_section {
+    margin-bottom: 60px;
+}
+.implementation_examples {
+    margin-bottom: 15px;
+}
+.image_three_section {
+    margin-bottom: 30px;
+}
+.image_four_section {
+    margin-bottom: 65px;
 }
 .text_one_container_p {
     text-align: center;
     margin-bottom: 0;
+    margin-top: 0;
     font-size: 16px;
     font-weight: bold;
 }
@@ -63,23 +88,29 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin-bottom: 60px;
 }
 /* .text_one_container { */
 .container_section {
     /* max-width: 1146px; */
     /* min-width: 1146px; */
-    max-width: 915px;
-    min-width: 915px;
+    /* max-width: 915px;
+    min-width: 915px; */
+    max-width: 836px;
+    min-width: 836px;
 }
 /* .animation_section {
 } */
 .animation_container {
     /* background-color: #86fe71; */
     background-color: #98ff86;
+    background-image: url("../img/grass.jpg");
+    background-size: cover;
     /* height: 50vw; */
-    height: 620px;
+    /* height: 620px; */
+    height: 565px;
     /* height: 50vw; */
-    border-radius: 24px;
+    border-radius: 24px 24px 24px 0;
     position: relative;
 }
 .animation_container_car {
@@ -297,10 +328,15 @@
     z-index: 5;
 }
 .image_teacher {
-    height: 527px;
+    /* height: 527px; */
+    height: 515px;
 }
 .text_two_p1 {
     font-size: 16px;
+    margin-top: 0;
+    /* margin-bottom: 15px; */
+    margin-bottom: 26px;
+    line-height: 140%;
 }
 .text_bold {
     font-weight: bold;
@@ -308,34 +344,62 @@
 .text_two_list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 10px; */
+    gap: 17px;
+    margin-top: 0;
+    margin-bottom: 60px;
 }
-.who_needs_table {
+.who_needs_table,
+.implementation_examples_table {
     border-collapse: collapse;
+    width: 100%;
 }
-.who_needs_table thead {
+.who_needs_table thead,
+.implementation_examples_table thead {
     vertical-align: middle;
     background: #F4F4F4;
 }
-.who_needs_table thead th {
+.who_needs_table thead th,
+.implementation_examples_table thead th {
     padding: 0 15px;
 }
-.who_needs_table thead th {
+.who_needs_table thead th,
+.implementation_examples_table thead th {
     height: 50px;
     border: none;
     text-align: center;
 }
 .who_needs_table thead th:first-child, 
-.who_needs_table tbody td:first-child {
+.implementation_examples_table thead th:first-child, 
+.who_needs_table tbody td:first-child,
+.implementation_examples_table tbody td:first-child {
     text-align: left;
 }
-.who_needs_table tbody td {
+.who_needs_table tbody td,
+.implementation_examples_table tbody td {
     height: 55px;
     text-align: center;
     padding: 0 15px;
     border-bottom: 1px solid #F4F4F4;
 }
-.who_needs_container_h2 {
+.who_needs_container_h2,
+.implementation_examples_container_h2 {
     text-align: center;
     font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+.image_two,
+.image_three,
+.image_four {
+    margin-top: 30px;
+    width: 100%;
+}
+.image_teacher_two {
+    margin-right: -294px;
+    z-index: 1;
+    position: relative;
+}
+.text_two_list li {
+    line-height: 140%;
 }
