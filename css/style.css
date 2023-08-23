@@ -1,6 +1,9 @@
 * {
     font-family: 'Itel', sans-serif;
 }
+body {
+    margin: 0;
+}
 .flex_center,
 .text_one,
 .text_two,
@@ -8,7 +11,8 @@
 .image_two_section,
 .implementation_examples,
 .image_three_section,
-.image_four_section
+.image_four_section,
+.footer_description_section
  {
     display: flex;
     justify-content: center;
@@ -20,8 +24,8 @@
     /* justify-content: space-around; */
     justify-content: space-between;
     align-items: baseline;
-    margin-top: 34px;
-    margin-bottom: 36px;
+    padding-top: 34px;
+    padding-bottom: 36px;
     /* max-width: 1146px;
     min-width: 1146px;
     height: 100px; */
@@ -29,6 +33,7 @@
 .nav_header_list {
     display: flex;
     gap: 26px;
+    padding-left: 0;
 }
 .container_header {
     /* max-width: 1146px; */
@@ -36,8 +41,8 @@
     /* height: 100px; */
     padding: 10px;
     text-align: center;
-    font-size: 54px;
-    color: blue;
+    font-size: 48px;
+    color: #575757;
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -47,7 +52,8 @@
 .image_two_container,
 .implementation_examples_container,
 .image_three_container,
-.image_four_container {
+.image_four_container,
+.footer_description_container {
     max-width: 1146px;
     min-width: 1146px;
 }
@@ -79,6 +85,8 @@
 .nav_header_list a {
     text-decoration: none;
     color: red;
+    /* color: #db6603; */
+    color: #ba5704;
     font-weight: bold;
 }
 .color_blue {
@@ -402,4 +410,56 @@
 }
 .text_two_list li {
     line-height: 140%;
+}
+.contacts_footer {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts_footer_one {
+    display: flex;
+    gap: 58px;
+}
+.logo_footer {
+    /* margin-bottom: 30px; */
+    margin-bottom: 44px;
+}
+.contacts_footer {
+    padding-bottom: 39px;
+}
+.logo_footer_p1 {
+    color: blue;
+    color: #575757;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.logo_footer_p2 {
+    margin-top: 11px;
+    color: #575757;
+}
+.contacts_footer a {
+    text-decoration: none;
+    /* color: #db6603; */
+    color: #ba5704;
+    font-weight: bold;
+}
+.footer_description_container {
+    background-color: #a1f0eb;
+    border-radius: 24px 24px 0 0;
+}
+.nav_header {
+    background-color: #a1f0eb;
+    border-radius: 0 0 24px 24px;
+}
+.nav_header_list {
+    padding-right: 37px;
+}
+.container_header {
+    /* padding-left: 20px; */
+    padding-left: 37px;
+}
+.logo_footer,
+.contacts_footer {
+    padding-left: 37px;
+    padding-right: 37px;
 }
