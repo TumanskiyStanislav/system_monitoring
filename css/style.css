@@ -460,14 +460,16 @@ body {
 }
 .footer_description_container {
     /* background-color: #a1f0eb; */
-    background-color: #bae447;
+    /* background-color: #bae447; */
+    background-color: #a3f7f15c;
     /* border-radius: 24px 24px 0 0; */
     /* border-radius: 8px 8px 0 0; */
     border-radius: 8px 8px 8px 8px;
 }
 .flex_center_container {
     /* background-color: #a1f0eb; */
-    background-color: #bae447;
+    /* background-color: #bae447; */
+    background-color: #a3f7f15c;
     border-radius: 0 8px 8px 0;
 }
 .nav_header_list {
