@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="background_light_green">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,34 +11,42 @@
 </head>
 <body>
     <header class="flex_center">
-        <nav class="nav_header">
+        <div class="logo_container">
+            <img src="./img/logo.svg" alt="" class="logo_top">
+        </div>
+        <div class="flex_center_container">
             <!-- Развитие территорий -->
-            <h1 class="container_header">
-                Развитие территорий
-            </h1>
-            <ul class="nav_header_list">
-                <li>
-                    <a href="">Что это?</a>
-                </li>
-                <li>
-                    <a href="">Как это работает?</a>
-                </li>
-                <li>
-                    <a href="">Кому нужно?</a>
-                </li>
-                <li>
-                    <a href="">Сколько стоит</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="text_one">
+            <nav class="nav_header">
+                <h1 class="container_header">
+                    Развитие территорий
+                </h1>
+                <ul class="nav_header_list">
+                    <li>
+                        <a href="">Что это?</a>
+                    </li>
+                    <li>
+                        <a href="">Как это работает?</a>
+                    </li>
+                    <li>
+                        <a href="">Кому нужно?</a>
+                    </li>
+                    <li>
+                        <a href="">Сколько стоит</a>
+                    </li>
+                </ul>
+            </nav>
             <div class="text_one_container">
                 <p class="text_one_container_p">Информационная система мониторинга комплексного развития территорий <span class="color_blue">помогает управлять территорией любого города / поселка</span></p>
             <!-- <p></p> -->
             </div>
-        </section>
+        </div>
+    </header>
+    <main>
+        <!-- <section class="text_one">
+            <div class="text_one_container">
+                <p class="text_one_container_p">Информационная система мониторинга комплексного развития территорий <span class="color_blue">помогает управлять территорией любого города / поселка</span></p>
+            </div>
+        </section> -->
         <section class="clouds">
             <div class="clouds-container">
                 <img src="./img/clouds/cloud1.png" class="cloud cloud1" data-speed="40" data-x="10%">
@@ -176,10 +184,22 @@
         <section class="footer_description_section">
             <div class="footer_description_container">
                 <div class="logo_footer">
-                    <p class="logo_footer_p1">Развитие территорий</p>
-                    <p class="logo_footer_p2">Информационная система</p>
+                    <div class="logo_footer_block_one">
+                        <p class="logo_footer_p1">Развитие территорий</p>
+                        <p class="logo_footer_p2">Информационная система мониторинга комплексного развития территорий</p>
+                    </div>
+                    <div class="logo_footer_block_two">
+                        <div class="logo_footer_block_two_one">
+                            <a href="mailto: info@nko-family.ru" class="logo_footer_block_two_one_link">info@nko-family.ru</a>
+                            <p class="logo_footer_block_two_one_p">Вопросы, предложения, пожелания</p>
+                        </div>
+                        <div class="logo_footer_block_two_two">
+                            <a href="tel:+78112702280" class="logo_footer_block_two_two_link">+7 (8112) 702 280</a>
+                            <p class="logo_footer_block_two_two_p">Ответим по будням с 10:00 до 18:00</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="contacts_footer">
+                <!-- <div class="contacts_footer">
                     <div class="contacts_footer_one">
                         <a href="mailto: antonioni2000@yandex.ru">antonioni2000@yandex.ru</a>
                         <a href="tel:+78123207044">+7 (964) 228-22-80</a>
@@ -187,6 +207,10 @@
                     <div class="contacts_footer_two">
                         <a href="https://msys.nko-family.ru/">сделано в MetaSystems</a>
                     </div>
+                </div> -->
+                <div class="text_footer_container">
+                    <p class="text_footer_container_p1">Разработано могучим коллективным разумом компаний:</p>
+                    <p class="text_footer_container_p2">ООО Urban Pro, ООО EBM, АНО "Зеленая тема"</p>
                 </div>
             </div>
         </section>
